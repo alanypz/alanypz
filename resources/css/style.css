@@ -1,0 +1,482 @@
+/* BASIC CSS =================================================================================== */
+
+/* Designed and written by Alan Yepez. Wanna chat? alanypz(at)gmail(dot)com */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #ffffff;
+    color: #505050;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/*.clearfix {zoom: 1;}*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* REUSABLE COMPONENTS ========================================================================= */
+
+/* 
+    COLOR PALLETE
+        
+    Main Theme Yellow:      #f1c40f
+    Darker Yellow Hover:    #d2aa0c
+*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section { padding: 4.0rem 0; }
+
+.box { padding: 0 1%; }
+
+/* HEADINGS ---------------------------------- */
+
+h1,
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 350%;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f1c40f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 100%;
+}
+
+h4 {
+    color: #f1c40f;
+    font-weight: 400;
+    font-size: 90%;
+}
+
+h4 span { 
+    font-style: italic;
+}
+
+h5 {
+    color: #7e7e7e;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+h5 span { color: #b1adad; }
+
+/* LINKS ------------------------------------- */
+
+a:link,
+a:visited {
+    color: #7e7e7e;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:active {
+    color: #f1c40f;
+    border-bottom: 1px solid #f1c40f;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+/* GENERIC ELEMENTS -------------------------- */
+
+.box-text {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.info-box {
+    line-height: 115%;
+    margin-bottom: 0.5rem;
+}
+
+/* TOOLTIPS ---------------------------------- */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip > span {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    background: #f1c40f;
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover > span {
+    visibility: visible;
+    top: -1.25rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 70%;
+    border-radius: 5px;
+    padding: 0 5px 2px;
+    opacity: 0.95;
+}
+
+/* ANIMATIONS -------------------------------- */
+
+.js--logo-animation { 
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s; 
+}
+/*.js--hex-animation { -webkit-animation-duration: .25s; animation-duration: .25s; }*/
+
+.js--wp-contact-row {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-contact-row.animated { opacity: 1; }
+
+/* HEADER ====================================================================================== */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nmvnsp13jyc-kimson-doan-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nmvnsp13jyc-kimson-doan-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.hero-subtitle-box {
+    display: inline-block;
+}
+
+.hero-subtitle {
+    font-size: 90%;
+    color: #ffffff;
+    float: left;
+    margin-top: .25rem;
+    margin-right: .85rem;
+}
+
+.site-logo {
+    height: 3.75rem;
+    width: auto;
+    float: left;
+    margin-top: 2.0rem;
+}
+
+.icon-hero {
+    font-size: 150%;
+    color: #f1c40f;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+/* MAIN NAV ---------------------------------- */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 3.0rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1.25rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 0.1rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #f1c40f;
+}
+
+/* STICKY NAV -------------------------------- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #ededed;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 0.8rem; }
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 0.7rem 0;
+    color: #555555;
+}
+
+.sticky .site-logo {
+    height: 2.2rem;
+    margin: 0.25rem 0;
+}
+
+/* MOBILE NAV -------------------------------- */
+
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+/* SECTION BIO ================================================================================= */
+
+.section-bio { background-color: #f4f4f4; }
+
+.bio-box {
+    margin-bottom: 1.5rem;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.my-photo {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.bio-intro {
+    line-height: 145%;
+    margin-top: 1.75rem;
+}
+
+.bio-subheading {
+    font-size: 110%;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* SECTION WORK ================================================================================ */
+/* SECTION PROJECTS ============================================================================ */
+
+/*.section-work { background-color: #f4f4f4; }*/
+.section-projects { background-color: #f4f4f4; }
+
+.work-row,
+.project-row {
+    margin-bottom: 1.5rem;
+}
+
+.work-img-box,
+.project-img-box {
+    margin-top: 0.75rem;
+}
+
+.logo-hex {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.info-box a { font-size: 92.5%; }
+
+.tech-icons {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.tech-icons li {
+    display: inline-block;
+    font-size: 135%;
+    margin-right: 1.0rem;
+}
+
+.tech-icons li:last-child {
+    margin-right: 0;
+}
+
+/* SECTION EDUCATION =========================================================================== */
+
+.section-education {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/ucf-polygon-knight-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/ucf-polygon-knight-min.jpg);
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.education-row { text-align: center; }
+
+/* SECTION COURSES ============================================================================= */
+
+.course-icon {
+    font-size: 350%;
+    display: block;
+    color: #f1c40f;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 80%;
+    margin: 0;
+}
+
+/* SECTION CONTACT ============================================================================= */
+
+.section-contact { background-color: #f4f4f4; }
+
+.contact-text {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1.5rem;
+    font-size: 125%;
+    text-align:center;
+}
+
+.contact-icon-row {
+    list-style: none;
+    text-align: center;
+}
+
+.contact-icon-row li {
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+.contact-icon-row li:last-child { margin-right: 0; }
+
+.contact-icon-row li a:link,
+.contact-icon-row li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #f1c40f;
+    font-size: 500%;
+}
+
+/* SECTION FOOTER ============================================================================== */
+
+footer {
+    background-color: #333333;
+    padding: 2.0rem;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+/* Disabling footer, for now. */
+footer p { margin-top: 0; }
+.footer-row { display: none; }
+
+.footer-social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.footer-social-links li {
+    display: inline-block;
+    margin-right: 1.0rem;
+}
+
+.footer-nav li:last-child,
+.footer-social-links li:last-child { margin-right: 0; }
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #f1c40f;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active { color: #f1c40f; }
+
+.footer-social-links li a:link,
+.footer-social-links li a:visited { font-size: 160%; }
+
+.ion-social-linkedin,
+.ion-social-github,
+.ion-social-googleplus,
+.ion-ios-email {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-linkedin:hover { color: #007bb5; }
+.ion-social-github:hover { color: #000000; }
+.ion-social-googleplus:hover { color: #dd4b39; }
+.ion-ios-email:hover { color: #ffffff; }
+
+footer p {
+    color: #7e7e7e;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 1.0rem;
+}

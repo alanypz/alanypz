@@ -1,0 +1,178 @@
+/*
+    Designed and written by Alan Yepez. Wanna chat? alanypz(at)gmail(dot)com
+
+    Width: > 1200px
+    Devices:
+        iPad Pro (Landscape) [1366px]
+        Sony Xperia Z4 Tablet, Samsung Galaxy Tab S2 (Landscape) [1280px]
+        
+/* 
+    Width: 1200px-1024px
+    Devices:    
+        iPad Pro (Portrait), iPads, Nexus 9 Tablet (Landscape) [1024px]
+*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box { width: 100%; }
+    
+    .row,
+    .hero-text-box { padding: 0 2%; }
+    
+    /* 
+        Fix for background images on mobile devices. Issure 
+        arises when using 'background-attachment: fixed' and 
+        'background-size: cover'. 
+    */
+    header,
+    .section-education { background-attachment: scroll; }
+    
+    .bio-box {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+/* 
+    Width: 1023px-768px
+    Devices:
+        Nexus 7 Tablet (Landscape) [960px]
+        Galaxy Note 5, LG G5, One Plus 3 (Landscape) [853px]
+        Sony Xperia Z4 Tablet, Samsung Galaxy Tab S2 (Portrait) [800px]
+        iPads, Nexus 9 Tablet (Portrait) [768px]
+*/
+@media only screen and (max-width: 1023px) {
+    html, body { font-size: 18px; }
+    section { padding: 3.0rem 0; }
+    
+    .bio-box {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .bio-intro {
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .tech-icons li { margin-right: 0.8rem; }
+}
+
+/* 
+    Width: 767px-481px
+    Devices:
+        iPhone 6/6S/7 Plus (Landscape) [736px]
+        Google Pixel/Pixel XL, Galaxy S7 Edge (Landscape) [731px]
+        iPhone 6/6S/7 (Landscape) [667px]
+        Galaxy S7 (Landscape) [640px]
+        Nexus 7 Tablet (Portrait) [600px]
+        iPhone 5/SE/iPod Touch (Landscape) [568px]
+        
+*/
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 2.0rem 0 ;}
+    
+    .row, 
+    .hero-text-box { padding: 0 4%; }
+    
+    .col { 
+        width: 100%;
+        display: block;
+        float: left;
+        margin: 0 0 4% 0;
+    }
+    
+    .span-1-of-2,
+    .span-1-of-4 { width: 49.2%; }
+    
+    .span-1-of-2:nth-child(odd),
+    .span-1-of-4:nth-child(odd) { margin-left: 0; }
+    
+    h2 { 
+        font-size: 150%;
+        margin-bottom: 1.5rem;
+    }
+    
+    h2:after { margin-top: 1.5rem; }
+    
+    .main-nav { display: none; }
+    .main-nav { 
+        float: left;
+        margin-top: 1.75rem;
+        margin-left: 1.0rem;
+    }
+    
+    .main-nav li { display: block; }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 0.7rem 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 0.5rem; }
+    .sticky .mobile-nav-icon i { color: #555555 }
+    .sticky .mobile-nav-icon { margin: .75rem 0; }
+    .sticky .site-logo { height: 3.0rem; }
+    
+    a.mobile-nav-icon { border: 0; }
+    .mobile-nav-icon { display: inline-block; }
+    
+    .bio-box {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.0rem;
+    }
+    
+    .bio-intro {
+        margin-top: .0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    .my-photo {
+        width: 30%;
+        margin-left: 35%;
+    }
+    
+    .logo-hex {
+        width: 33.33%;
+        margin-left: 33.33%;
+    }
+    
+    .work-img-box,
+    .project-img-box { margin-bottom: 1.0rem; }
+    
+    .contact-icon-row li a:link,
+    .contact-icon-row li a:visited { font-size: 450%; }
+    .contact-icon-row li { margin-right: 1.5rem; }
+}
+
+/*
+    Width: 480px-321px
+    Devices:
+        Galaxy Note 5, LG G5, One Plus 3 (Portrait) [853px]
+        iPhone 6/6S/7 Plus (Portrait) [414px]
+        Nexus  5X/6P, Google Pixel/Pixel XL, Galaxy S7 Edge (Portrait) [411px]
+        iPhone 6/6S/7 (Portrait) [375px]
+        Galaxy S7 (Portrait) [340px]
+*/
+@media only screen and (max-width: 480px) {    
+    section { padding: 1.5rem 0 ; }
+    .section-education { font-size: 80%; }
+    .education-row { text-align: left; }
+}
+
+/*
+    Width: <= 320px
+    Devices:
+        iPhone 4/5/SE, iPod Touch (Portrait) [320px]
+*/
+@media only screen and (max-width: 320px) {    
+    h1 { font-size: 250%; }
+    
+    .contact-icon-row li a:link,
+    .contact-icon-row li a:visited { font-size: 400%; }
+    .contact-icon-row li { margin-right: 1.25rem; }
+}
