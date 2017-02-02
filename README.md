@@ -2,8 +2,6 @@
 
 My personal webpage and online portfolio. Hosted by AWS.
 
-![Sample header](https://s3.amazonaws.com/aws-website-personalsite-h35yy/resources/img/sample-header.png)
-
 ## Font
 
 ### [Lato](https://fonts.google.com/specimen/Lato)
