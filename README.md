@@ -1,6 +1,6 @@
 # [alanypz](http://www.alanypz.com)
 
-My personal webpage and online portfolio. Hosted by AWS.
+My personal webpage and online portfolio.
 
 ## Font
 
