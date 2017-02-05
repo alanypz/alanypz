@@ -340,7 +340,10 @@ header {
     margin-left: 15%;
 }
 
-.info-box a { font-size: 92.5%; }
+.info-box a { 
+    font-size: 92.5%;
+    margin-right: 0.5rem;
+}
 
 .tech-icons {
     list-style: none;
