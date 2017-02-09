@@ -29,15 +29,7 @@ $(document).ready(function() {
             }
         });
     });
-    
-    /* Contact Row Animation */
-    /* Icon row in section-contact enters from bottom of screen  */
-    $('.js--wp-contact').waypoint(function(direction) {
-        $('.js--wp-contact-row').addClass('animated fadeInUp');
-    }, {
-      offset: '80%'
-    });
-    
+        
     /* Site Logo Animation */
     /* Pulse on hover  */
     $('.js--logo-animation').hover(

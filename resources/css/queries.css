@@ -12,23 +12,10 @@
         iPad Pro (Portrait), iPads, Nexus 9 Tablet (Landscape) [1024px]
 */
 @media only screen and (max-width: 1200px) {
-    .hero-text-box { width: 100%; }
-    
     .row,
     .hero-text-box { padding: 0 2%; }
+    .hero-text-box { width: 100%; }
     
-    /* 
-        Fix for background images on mobile devices. Issure 
-        arises when using 'background-attachment: fixed' and 
-        'background-size: cover'. 
-    */
-    header,
-    .section-education { background-attachment: scroll; }
-    
-    .bio-box {
-        width: 70%;
-        margin-left: 15%;
-    }
 }
 
 /* 
@@ -41,25 +28,15 @@
 */
 @media only screen and (max-width: 1023px) {
     html, body { font-size: 18px; }
-    section { padding: 3.0rem 0; }
-    
-    .bio-box {
-        width: 80%;
-        margin-left: 10%;
-    }
-    
-    .bio-intro {
-        margin-top: 1.5rem;
-        padding-bottom: 1rem;
-    }
-    
+    section { padding: 1.5rem 0 ; }
+        
     .tech-icons li { margin-right: 0.8rem; }
 }
 
 /* 
     Width: 767px-481px
     Devices:
-        iPhone 6/6S/7 Plus (Landscape) [736px]
+        iPhone 6+/6S+/7 (Landscape) [736px]
         Google Pixel/Pixel XL, Galaxy S7 Edge (Landscape) [731px]
         iPhone 6/6S/7 (Landscape) [667px]
         Galaxy S7 (Landscape) [640px]
@@ -69,7 +46,7 @@
 */
 @media only screen and (max-width: 767px) {
     body { font-size: 16px; }
-    section { padding: 2.0rem 0 ;}
+    section { padding: 1.0rem 0 ; }
     
     .row, 
     .hero-text-box { padding: 0 4%; }
@@ -78,21 +55,14 @@
         width: 100%;
         display: block;
         float: left;
-        margin: 0 0 4% 0;
     }
-    
-    .span-1-of-2,
-    .span-1-of-4 { width: 49.2%; }
-    
-    .span-1-of-2:nth-child(odd),
-    .span-1-of-4:nth-child(odd) { margin-left: 0; }
-    
+        
     h2 { 
         font-size: 150%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.25rem;
     }
     
-    h2:after { margin-top: 1.5rem; }
+    h2:after { margin-top: 1.25rem; }
     
     .main-nav { display: none; }
     .main-nav { 
@@ -119,49 +89,43 @@
     a.mobile-nav-icon { border: 0; }
     .mobile-nav-icon { display: inline-block; }
     
-    .bio-box {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 1.0rem;
+    
+    .contact-icon-row { 
+        text-align: center;
+        font-size: 275%;
     }
     
-    .bio-intro {
-        margin-top: .0;
-        padding-bottom: 0;
-        text-align: center;
-    }
+    .contact-icon-row li { margin-right: 1.75rem; }
     
     .my-photo {
         width: 30%;
         margin-left: 35%;
+        margin-bottom: 1.0rem;
     }
     
-    .logo-hex {
-        width: 33.33%;
-        margin-left: 33.33%;
-    }
+    /* Disabling these images for small browser widths.   */
+    .logo-hex, .course-icon { display: none; }
     
-    .work-img-box,
-    .project-img-box { margin-bottom: 1.0rem; }
+    .entry-row { margin-bottom: 1.0rem; }
     
-    .contact-icon-row li a:link,
-    .contact-icon-row li a:visited { font-size: 450%; }
-    .contact-icon-row li { margin-right: 1.5rem; }
+    .entry-img-box { margin-top: 0; }
+    
+    .education-row div:nth-child(2) { margin-bottom: 1.0rem }
+    
+    .footer-icon-row { font-size: 200%; }
 }
 
 /*
     Width: 480px-321px
     Devices:
         Galaxy Note 5, LG G5, One Plus 3 (Portrait) [853px]
-        iPhone 6/6S/7 Plus (Portrait) [414px]
+        iPhone 6+/6S+/7 (Portrait) [414px]
         Nexus  5X/6P, Google Pixel/Pixel XL, Galaxy S7 Edge (Portrait) [411px]
         iPhone 6/6S/7 (Portrait) [375px]
         Galaxy S7 (Portrait) [340px]
 */
 @media only screen and (max-width: 480px) {    
     section { padding: 1.5rem 0 ; }
-    .section-education { font-size: 80%; }
-    .education-row { text-align: left; }
 }
 
 /*
@@ -169,10 +133,45 @@
     Devices:
         iPhone 4/5/SE, iPod Touch (Portrait) [320px]
 */
-@media only screen and (max-width: 320px) {    
-    h1 { font-size: 250%; }
-    
-    .contact-icon-row li a:link,
-    .contact-icon-row li a:visited { font-size: 400%; }
-    .contact-icon-row li { margin-right: 1.25rem; }
+@media only screen and (max-width: 320px) {
+
+/* 
+    Targeting iOS devices to prevent issues with
+    'background-attachment: fixed' that distorts images.
+*/
+
+/* iPhone 4/4S */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      header,
+      .section-education { background-attachment: scroll; }
+}
+
+/* iPhone 5/5S */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      header,
+      .section-education { background-attachment: scroll; }
+}
+
+/* iPhone 6/6S/7 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      header,
+      .section-education { background-attachment: scroll; }
+}
+
+/* iPhone 6+/6S+/7 */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      header,
+      .section-education { background-attachment: scroll; }
 }

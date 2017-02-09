@@ -41,7 +41,7 @@ body {
     margin: 0 auto;
 }
 
-section { padding: 4.0rem 0; }
+section { padding: 2.0rem 0; }
 
 .box { padding: 0 1%; }
 
@@ -109,7 +109,7 @@ a:link,
 a:visited {
     color: #7e7e7e;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px dotted #7e7e7e;
 }
 
 a:hover,
@@ -122,14 +122,26 @@ a:active {
 
 /* GENERIC ELEMENTS -------------------------- */
 
-.box-text {
+.box-text, .bullet-list {
     font-size: 90%;
     line-height: 145%;
 }
 
+.box-text { margin-bottom: 0.75rem; }
+.box-text:last-child { margin-bottom: 0; }
+
+.bullet-list { margin-left: 1.0rem; }
+.bullet-list li { margin-bottom: 0.5rem; }
+.bullet-list li:last-child { margin-bottom: 0; }
+
 .info-box {
     line-height: 115%;
     margin-bottom: 0.5rem;
+}
+
+.info-box a { 
+    font-size: 92.5%;
+    margin-right: 0.5rem;
 }
 
 /* TOOLTIPS ---------------------------------- */
@@ -161,6 +173,27 @@ a:active {
     border-radius: 5px;
     padding: 0 5px 2px;
     opacity: 0.95;
+}
+
+/* ICONS ------------------------------------- */
+
+.ion-social-linkedin,
+.ion-social-github,
+.ion-social-googleplus,
+.ion-ios-email {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-linkedin:hover { color: #007bb5; }
+.ion-social-github:hover { color: #000000; }
+.ion-social-googleplus:hover { color: #dd4b39; }
+.ion-ios-email:hover { color: #ffffff; }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 80%;
+    margin: 0;
 }
 
 /* ANIMATIONS -------------------------------- */
@@ -297,26 +330,31 @@ header {
 
 .section-bio { background-color: #f4f4f4; }
 
-.bio-box {
-    margin-bottom: 1.5rem;
-    width: 60%;
-    margin-left: 20%;
-}
-
 .my-photo {
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin-left: 10%;
 }
 
-.bio-intro {
-    line-height: 145%;
-    margin-top: 1.75rem;
+.contact-icon-row {
+    width: 100%;
+    font-size: 225%;
+    margin-top: 1.0rem;
+    text-align: left;
+    list-style: none;
 }
 
-.bio-subheading {
-    font-size: 110%;
-    margin-bottom: 0.75rem;
-    text-transform: uppercase;
+.contact-icon-row li {
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.contact-icon-row li:last-child { margin-right: 0; }
+
+.contact-icon-row li a:link,
+.contact-icon-row li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #f1c40f;
 }
 
 /* SECTION WORK ================================================================================ */
@@ -325,24 +363,14 @@ header {
 /*.section-work { background-color: #f4f4f4; }*/
 .section-projects { background-color: #f4f4f4; }
 
-.work-row,
-.project-row {
-    margin-bottom: 1.5rem;
-}
+.entry-row { margin-bottom: 1.5rem; }
+.entry-row:last-child { margin-bottom: 0; }
 
-.work-img-box,
-.project-img-box {
-    margin-top: 0.75rem;
-}
+.entry-img-box { margin-top: 0.75rem; }
 
 .logo-hex {
-    width: 70%;
-    margin-left: 15%;
-}
-
-.info-box a { 
-    font-size: 92.5%;
-    margin-right: 0.5rem;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .tech-icons {
@@ -356,9 +384,7 @@ header {
     margin-right: 1.0rem;
 }
 
-.tech-icons li:last-child {
-    margin-right: 0;
-}
+.tech-icons li:last-child { margin-right: 0; }
 
 /* SECTION EDUCATION =========================================================================== */
 
@@ -370,116 +396,47 @@ header {
     background-attachment: fixed;
 }
 
-.education-row { text-align: center; }
-
 /* SECTION COURSES ============================================================================= */
 
 .course-icon {
-    font-size: 350%;
+    font-size: 400%;
+    margin-left: 30%;
+    margin-bottom: 40px;
     display: block;
     color: #f1c40f;
-}
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-size: 80%;
-    margin: 0;
-}
-
-/* SECTION CONTACT ============================================================================= */
-
-.section-contact { background-color: #f4f4f4; }
-
-.contact-text {
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 1.5rem;
-    font-size: 125%;
-    text-align:center;
-}
-
-.contact-icon-row {
-    list-style: none;
     text-align: center;
-}
-
-.contact-icon-row li {
-    display: inline-block;
-    margin-right: 2.5rem;
-}
-
-.contact-icon-row li:last-child { margin-right: 0; }
-
-.contact-icon-row li a:link,
-.contact-icon-row li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #f1c40f;
-    font-size: 500%;
+    vertical-align: top;
 }
 
 /* SECTION FOOTER ============================================================================== */
 
 footer {
     background-color: #333333;
-    padding: 2.0rem;
-    font-size: 80%;
+    padding: 1.0rem;
 }
-
-.footer-nav {
-    list-style: none;
-    float: left;
-}
-
-/* Disabling footer, for now. */
-footer p { margin-top: 0; }
-.footer-row { display: none; }
-
-.footer-social-links {
-    list-style: none;
-    float: right;
-}
-
-.footer-nav li,
-.footer-social-links li {
-    display: inline-block;
-    margin-right: 1.0rem;
-}
-
-.footer-nav li:last-child,
-.footer-social-links li:last-child { margin-right: 0; }
-
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.footer-social-links li a:link,
-.footer-social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #f1c40f;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active { color: #f1c40f; }
-
-.footer-social-links li a:link,
-.footer-social-links li a:visited { font-size: 160%; }
-
-.ion-social-linkedin,
-.ion-social-github,
-.ion-social-googleplus,
-.ion-ios-email {
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.ion-social-linkedin:hover { color: #007bb5; }
-.ion-social-github:hover { color: #000000; }
-.ion-social-googleplus:hover { color: #dd4b39; }
-.ion-ios-email:hover { color: #ffffff; }
 
 footer p {
     color: #7e7e7e;
     text-align: center;
-    font-size: 80%;
-    margin-top: 1.0rem;
+    font-size: 60%;
+}
+
+.footer-icon-row {
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 0.75rem;
+}
+
+.footer-icon-row li {
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.footer-icon-row li a:link,
+.footer-icon-row li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #f1c40f;
 }
