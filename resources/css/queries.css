@@ -111,6 +111,12 @@
     .entry-img-box { margin-top: 0; }
     
     .education-row div:nth-child(2) { margin-bottom: 1.0rem }
+        
+    .section-courses .entry-row { margin-bottom: 0; }
+        
+    .empty-box { margin: 0; }
+    
+    .course-box { margin-bottom: 1.0rem; }
     
     .footer-icon-row { font-size: 200%; }
 }
@@ -139,6 +145,7 @@
     Targeting iOS devices to prevent issues with
     'background-attachment: fixed' that distorts images.
 */
+}
 
 /* iPhone 4/4S */
 @media only screen 

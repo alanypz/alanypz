@@ -131,7 +131,7 @@ a:active {
 .box-text:last-child { margin-bottom: 0; }
 
 .bullet-list { margin-left: 1.0rem; }
-.bullet-list li { margin-bottom: 0.5rem; }
+.bullet-list li { margin-bottom: 0.3rem; }
 .bullet-list li:last-child { margin-bottom: 0; }
 
 .info-box {
