@@ -41,7 +41,7 @@ body {
     margin: 0 auto;
 }
 
-section { padding: 2.0rem 0; }
+section { padding: 4.0rem 0; }
 
 .box { padding: 0 1%; }
 
@@ -99,6 +99,7 @@ h5 {
     color: #7e7e7e;
     font-size: 90%;
     font-weight: 300;
+    margin-top: -1px;
 }
 
 h5 span { color: #b1adad; }
@@ -180,7 +181,8 @@ a:active {
 .ion-social-linkedin,
 .ion-social-github,
 .ion-social-googleplus,
-.ion-ios-email {
+.ion-ios-email,
+.ion-ios-cloud-download {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
@@ -188,7 +190,8 @@ a:active {
 .ion-social-linkedin:hover { color: #007bb5; }
 .ion-social-github:hover { color: #000000; }
 .ion-social-googleplus:hover { color: #dd4b39; }
-.ion-ios-email:hover { color: #ffffff; }
+.ion-ios-email:hover { color: #b9b9b9; }
+.ion-ios-cloud-download:hover { color: #4fc4fc; }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -202,15 +205,6 @@ a:active {
     -webkit-animation-duration: .5s;
     animation-duration: .5s; 
 }
-/*.js--hex-animation { -webkit-animation-duration: .25s; animation-duration: .25s; }*/
-
-.js--wp-contact-row {
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-contact-row.animated { opacity: 1; }
 
 /* HEADER ====================================================================================== */
 
@@ -328,7 +322,7 @@ header {
 
 /* SECTION BIO ================================================================================= */
 
-.section-bio { background-color: #f4f4f4; }
+.section-bio { background-color: #f8f8f8; }
 
 .my-photo {
     width: 80%;
@@ -361,7 +355,7 @@ header {
 /* SECTION PROJECTS ============================================================================ */
 
 /*.section-work { background-color: #f4f4f4; }*/
-.section-projects { background-color: #f4f4f4; }
+.section-projects { background-color: #f8f8f8; }
 
 .entry-row { margin-bottom: 1.5rem; }
 .entry-row:last-child { margin-bottom: 0; }
@@ -411,7 +405,7 @@ header {
 /* SECTION FOOTER ============================================================================== */
 
 footer {
-    background-color: #333333;
+    background-color: #404040;
     padding: 1.0rem;
 }
 
@@ -419,7 +413,15 @@ footer p {
     color: #7e7e7e;
     text-align: center;
     font-size: 60%;
+    margin-bottom: 0.25rem;
 }
+
+footer p a:link,
+footer p a:visited { color: #6c6c6c; } 
+
+footer p a:hover,
+footer p a:active { color: #f1c40f; } 
+
 
 .footer-icon-row {
     width: 100%;

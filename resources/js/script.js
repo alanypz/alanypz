@@ -35,14 +35,7 @@ $(document).ready(function() {
     $('.js--logo-animation').hover(
         function(){ $(this).addClass('animated pulse') },
         function(){ $(this).removeClass('animated pulse') }
-    )
-    
-    /* Site Logo Animation */
-    /* Pulse on hover  */
-    $('.js--hex-animation').hover(
-        function(){ $(this).addClass('animated pulse') },
-        function(){ $(this).removeClass('animated pulse') }
-    )
+    )    
     
     /* Mobile Navigation */
     /* Show/hide section links and toggle nav open/close icons */

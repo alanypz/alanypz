@@ -28,7 +28,7 @@
 */
 @media only screen and (max-width: 1023px) {
     html, body { font-size: 18px; }
-    section { padding: 1.5rem 0 ; }
+    section { padding: 3.0rem 0 ; }
         
     .tech-icons li { margin-right: 0.8rem; }
 }
@@ -46,7 +46,7 @@
 */
 @media only screen and (max-width: 767px) {
     body { font-size: 16px; }
-    section { padding: 1.0rem 0 ; }
+    section { padding: 2.0rem 0 ; }
     
     .row, 
     .hero-text-box { padding: 0 4%; }
@@ -130,8 +130,8 @@
         iPhone 6/6S/7 (Portrait) [375px]
         Galaxy S7 (Portrait) [340px]
 */
-@media only screen and (max-width: 480px) {    
-    section { padding: 1.5rem 0 ; }
+@media only screen and (max-width: 480px) {
+    .contact-icon-row li { margin-right: 1.25rem; }
 }
 
 /*
@@ -140,12 +140,14 @@
         iPhone 4/5/SE, iPod Touch (Portrait) [320px]
 */
 @media only screen and (max-width: 320px) {
+    .contact-icon-row li { margin-right: 0.75rem; }
+    h1 { font-size: 300%; }
+}
 
 /* 
     Targeting iOS devices to prevent issues with
     'background-attachment: fixed' that distorts images.
 */
-}
 
 /* iPhone 4/4S */
 @media only screen 
