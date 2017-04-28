@@ -329,19 +329,19 @@ header {
     margin-left: 10%;
 }
 
-.contact-list-row {
+ul.contact-list-row {
     width: 100%;
     margin-top: 1.75rem;
     text-align: left;
     list-style: none;
 }
 
-.contact-list-row li {
+ul.contact-list-row li {
     display: inline-block;
     margin-right: 1.75rem;
 }
 
-.contact-list-row li:last-child { margin-right: 0; }
+ul.contact-list-row li:last-child { margin-right: 0; }
 
 /* SECTION WORK ================================================================================ */
 /* SECTION PROJECTS ============================================================================ */
