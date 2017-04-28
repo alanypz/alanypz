@@ -90,13 +90,10 @@
     .mobile-nav-icon { display: inline-block; }
     
     
-    .contact-icon-row { 
+    .contact-list-row { 
         text-align: center;
-        font-size: 275%;
     }
-    
-    .contact-icon-row li { margin-right: 1.75rem; }
-    
+        
     .my-photo {
         width: 30%;
         margin-left: 35%;
@@ -106,7 +103,7 @@
     /* Disabling these images for small browser widths.   */
     .logo-hex, .course-icon { display: none; }
     
-    .entry-row { margin-bottom: 1.0rem; }
+    .entry-row { margin-bottom: 0.75rem; }
     
     .entry-img-box { margin-top: 0; }
     
@@ -118,7 +115,7 @@
     
     .course-box { margin-bottom: 1.0rem; }
     
-    .footer-icon-row { font-size: 200%; }
+    .footer-list-row { font-size: 100%; }
 }
 
 /*
@@ -131,7 +128,8 @@
         Galaxy S7 (Portrait) [340px]
 */
 @media only screen and (max-width: 480px) {
-    .contact-icon-row li { margin-right: 1.25rem; }
+    .contact-list-row li { margin-right: 1.50rem; }
+    .entry-row { margin-bottom: 1.50rem; }
 }
 
 /*
@@ -140,7 +138,7 @@
         iPhone 4/5/SE, iPod Touch (Portrait) [320px]
 */
 @media only screen and (max-width: 320px) {
-    .contact-icon-row li { margin-right: 0.75rem; }
+    .contact-list-row li { margin-right: 1.0rem; }
     h1 { font-size: 300%; }
 }
 

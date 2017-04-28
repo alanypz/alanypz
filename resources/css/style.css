@@ -329,27 +329,19 @@ header {
     margin-left: 10%;
 }
 
-.contact-icon-row {
+.contact-list-row {
     width: 100%;
-    font-size: 225%;
-    margin-top: 1.0rem;
+    margin-top: 1.75rem;
     text-align: left;
     list-style: none;
 }
 
-.contact-icon-row li {
+.contact-list-row li {
     display: inline-block;
-    margin-right: 0.75rem;
+    margin-right: 1.75rem;
 }
 
-.contact-icon-row li:last-child { margin-right: 0; }
-
-.contact-icon-row li a:link,
-.contact-icon-row li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #f1c40f;
-}
+.contact-list-row li:last-child { margin-right: 0; }
 
 /* SECTION WORK ================================================================================ */
 /* SECTION PROJECTS ============================================================================ */
@@ -357,7 +349,7 @@ header {
 /*.section-work { background-color: #f4f4f4; }*/
 .section-projects { background-color: #f8f8f8; }
 
-.entry-row { margin-bottom: 1.5rem; }
+.entry-row { margin-bottom: 1.75rem; }
 .entry-row:last-child { margin-bottom: 0; }
 
 .entry-img-box { margin-top: 0.75rem; }
@@ -369,6 +361,7 @@ header {
 
 .tech-icons {
     list-style: none;
+    margin-top: 0.75rem;
     margin-bottom: 0.5rem;
 }
 
@@ -381,6 +374,7 @@ header {
 .tech-icons li:last-child { margin-right: 0; }
 
 /* SECTION EDUCATION =========================================================================== */
+/* SECTION COURSES ============================================================================= */
 
 .section-education {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/ucf-polygon-knight-min.jpg);
@@ -388,18 +382,6 @@ header {
     background-size: cover;
     color: #ffffff;
     background-attachment: fixed;
-}
-
-/* SECTION COURSES ============================================================================= */
-
-.course-icon {
-    font-size: 400%;
-    margin-left: 30%;
-    margin-bottom: 40px;
-    display: block;
-    color: #f1c40f;
-    text-align: center;
-    vertical-align: top;
 }
 
 /* SECTION FOOTER ============================================================================== */
@@ -422,23 +404,27 @@ footer p a:visited { color: #6c6c6c; }
 footer p a:hover,
 footer p a:active { color: #f1c40f; } 
 
-
-.footer-icon-row {
+.footer-list-row {
     width: 100%;
-    font-size: 150%;
+    font-size: 80%;
     text-align: center;
     list-style: none;
     margin-bottom: 0.75rem;
 }
 
-.footer-icon-row li {
+.footer-list-row li {
     display: inline-block;
-    margin-right: 0.75rem;
+    margin-right: 1.75rem;
 }
 
-.footer-icon-row li a:link,
-.footer-icon-row li a:visited {
+.footer-list-row li:last-child { margin-right: 0; }
+
+.footer-list-row li a:link,
+.footer-list-row li a:visited {
     text-decoration: none;
     border: 0;
     color: #f1c40f;
 }
+
+.footer-list-row li a:hover,
+.footer-list-row li a:active { color: #d2aa0c; }
